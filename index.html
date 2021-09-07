@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tags</title>
+</head>
+<body>
+       
+    <div class="container">
+
+        <div class="container__block">
+            <div class="block">
+    
+                <!-- Header -->
+                <div class="block__header header">
+                    <div class="header__input">
+                        <input type="text" class="textinput" id="input-title">
+                    </div>
+                    <div class="header__button">
+                        <button type="submit" class="button" id="button-add" onclick="list.add();">Add tag</button>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="block__content">
+                    <div class="block__items" id="items">
+    
+                        <div class="block__item" hidden>
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="item__content">
+                                    <div class="item__text">
+                                        Item's text
+                                    </div>
+                                    <div class="item__delete">
+                                        <img src="img/delete-button.svg" class="icon-delete">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container__block">
+            <div class="settings">
+                <div class="settings__title">
+                    Settings
+                </div>
+                <div class="settings__row">
+                    <input type="checkbox" id="chb-readonly">
+                    <div class="settings__text">
+                        Read only
+                    </div>
+                </div>
+                <div class="settings__row">
+                    <button class="button btn-settings" onclick="list.clear();">Clear tags</button>
+                </div>
+                <div class="settings__row">
+                    <button class="button btn-settings" onclick="save_handler();">Save</button>
+                </div>
+                <div class="settings__row">
+                    <button class="button btn-settings" onclick="load_handler();">Load</button>
+                </div>
+                <div class="settings__row">
+                   <div class="settings__message">
+                       Lorem ipsum dolor sit amet.
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
